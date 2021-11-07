@@ -44,14 +44,14 @@ namespace FastRead
             this.label1.Location = new System.Drawing.Point(15, 20);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(398, 25);
+            this.label1.Size = new System.Drawing.Size(498, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Введите текст для чтения в поле ниже";
             // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(2, 51);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(6);
             this.richTextBox1.Name = "richTextBox1";
             this.richTextBox1.Size = new System.Drawing.Size(951, 610);
             this.richTextBox1.TabIndex = 1;
@@ -68,7 +68,7 @@ namespace FastRead
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // numericUpDown1
+            // WordInMinute
             // 
             this.WordInMinute.Location = new System.Drawing.Point(489, 18);
             this.WordInMinute.Maximum = new decimal(new int[] {
@@ -81,8 +81,8 @@ namespace FastRead
             0,
             0,
             0});
-            this.WordInMinute.Name = "numericUpDown1";
-            this.WordInMinute.Size = new System.Drawing.Size(120, 31);
+            this.WordInMinute.Name = "WordInMinute";
+            this.WordInMinute.Size = new System.Drawing.Size(120, 37);
             this.WordInMinute.TabIndex = 3;
             this.WordInMinute.Value = new decimal(new int[] {
             150,
@@ -96,7 +96,7 @@ namespace FastRead
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
             this.ClientSize = new System.Drawing.Size(1600, 865);
@@ -105,9 +105,10 @@ namespace FastRead
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.WordInMinute)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
