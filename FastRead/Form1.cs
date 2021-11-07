@@ -19,8 +19,6 @@ namespace FastRead
         string currentWord;
         int textSize = 0;
         string[] words;
-        float wordInLine;
-        float secForLine = 1;
         float wordInMinute;
         public Form1()
         {
@@ -36,7 +34,6 @@ namespace FastRead
             textSize = richTextBox1.Text.Length;
             timer1.Enabled = isStart;
             words = richTextBox1.Text.Split(' ');
-            wordInLine = richTextBox1.Lines[0].Split(' ').Length;
             wordInMinute = Convert.ToInt32(WordInMinute.Value);
         }
 
@@ -78,10 +75,10 @@ namespace FastRead
             {
                 isStart = false;
             }
-            if (currentWordIndex % 100 == 0)
-            {
-                richTextBox1.ScrollToCaret();
-            }
+            //if (currentWordIndex % 100 == 0)
+            //{
+            //    richTextBox1.ScrollToCaret();
+            //}
         }
 
         void GetText()
