@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastRead", "FastRead\FastRead.csproj", "{09DFEFDE-B007-4052-BFF7-19C0F07C57BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09DFEFDE-B007-4052-BFF7-19C0F07C57BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09DFEFDE-B007-4052-BFF7-19C0F07C57BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09DFEFDE-B007-4052-BFF7-19C0F07C57BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09DFEFDE-B007-4052-BFF7-19C0F07C57BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE922E3E-D9A0-4394-B034-94803CC9BC5F}
+	EndGlobalSection
+EndGlobal
