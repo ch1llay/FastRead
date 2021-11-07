@@ -78,6 +78,10 @@ namespace FastRead
             {
                 isStart = false;
             }
+            if (currentWordIndex % 100 == 0)
+            {
+                richTextBox1.ScrollToCaret();
+            }
         }
 
         void GetText()
@@ -93,17 +97,17 @@ namespace FastRead
                 // декодируем байты в строку
                 string textFromFile = Encoding.UTF8.GetString(array);
                 richTextBox1.Text = textFromFile;
-                int wordAmmount = 0;
-                for(var i = 0; i< richTextBox1.Text.Length; i++)
-                {
-                    if(richTextBox1.Text[i] == ' ')
-                    {
-                        wordAmmount++;
-                    }
-                    if(wordAmmount == 8)
-                    {
-                    }
-                }
+                //int wordAmmount = 0;
+                //for(var i = 0; i< richTextBox1.Text.Length; i++)
+                //{
+                //    if(richTextBox1.Text[i] == ' ')
+                //    {
+                //        wordAmmount++;
+                //    }
+                //    if(wordAmmount == 8)
+                //    {
+                //    }
+                //}
             }
         }
         private void Form1_Load(object sender, EventArgs e)

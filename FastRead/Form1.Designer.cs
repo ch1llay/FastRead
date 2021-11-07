@@ -53,7 +53,7 @@ namespace FastRead
             this.richTextBox1.Location = new System.Drawing.Point(2, 51);
             this.richTextBox1.Margin = new System.Windows.Forms.Padding(6);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(951, 610);
+            this.richTextBox1.Size = new System.Drawing.Size(951, 878);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
@@ -85,7 +85,7 @@ namespace FastRead
             this.WordInMinute.Size = new System.Drawing.Size(120, 37);
             this.WordInMinute.TabIndex = 3;
             this.WordInMinute.Value = new decimal(new int[] {
-            150,
+            300,
             0,
             0,
             0});
@@ -98,8 +98,9 @@ namespace FastRead
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoValidate = System.Windows.Forms.AutoValidate.EnableAllowFocusChange;
-            this.ClientSize = new System.Drawing.Size(1600, 865);
+            this.AutoScroll = true;
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(982, 953);
             this.Controls.Add(this.WordInMinute);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.richTextBox1);
@@ -107,7 +108,8 @@ namespace FastRead
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "FastRead";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.WordInMinute)).EndInit();
             this.ResumeLayout(false);
